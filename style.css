@@ -18,9 +18,8 @@
     padding: 8px 20px;
     align-items: center;
     background-color: black;
-    position: sticky;  /*Important for fixing the position of navbar*/
-    top: 0; /*Ye batata hai ki sticky hone ke baad kitni doori pe chipakna hai.
-               top: 0; matlab jab element viewport ke top ko touch kare, wahi chipak jao.*/
+    position: sticky; 
+    top: 0; 
 }
 
 .leftNav{
@@ -37,17 +36,15 @@
     display: flex;
     justify-content: center;
     border: none;
-    /* justify-content: center; --> no need*/
-    /* abhi hame input ko select krna he uske liye hamare pass CHILD SELECTOR hota he */
+    
 }
 
-/* .centerNav input:nth-child(1){ 
-} */
+
 
 .centerNav > input{
     
     width:50%;
-    border: none;  /*border apne hisabse kreinge */
+    border: none;  
     /* border-radius: 20px; */
     padding: 5px 18px;
     font-size: 20px;
@@ -60,22 +57,15 @@
 }
 
 .centerNav > input::placeholder {
-    color: #aaa;  /* ya koi light color like white */
+    color: #aaa; 
 
 }
 
 .centerNav > input:focus{
-    /* input:focus ka kaam hota hai jab input field pe user ka cursor (focus) aata hai,
-     yaani jab koi usme type karne lagta hai, tab us pe jo bhi styling apply karni ho, wo likhte hain. 
-     input:focus {
-     border: 2px solid red;=> Jab user input box pe click karega ya tab se navigate karega, 
-     toh border red ho jayega — kyunki wo element "focus" me aaya hai.
-     }
-*/
+   
     outline: none;
     box-shadow: none;
-    /* caret-color: #ccc; -> iska(carel "| (search ke time pe jo blink hota he )"koi required nhi he , 
-    vo issue aa gya tha , vo caret glow kr rha tha ovel me padding se ho gya set*/
+    /* caret-color: #ccc;*/
 }
 
 
@@ -103,10 +93,6 @@
 
 .rightNav img:nth-child(3){
     width: 30px;
-    /* border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;    => itna sab krne se better border-radius:50%; */
     border-radius: 50%;
 }
 
@@ -221,9 +207,6 @@
 }
 
 .bg1 > div{
-    /* padding: 200px;
-    margin-left: 39%;   -> ye bhi working he */
-
     padding: 195px 0px 0px 970px;
     display: flex;
     flex-direction:column;
@@ -258,9 +241,6 @@
 }
 
 .bg2 > div{
-    /* padding: 200px;
-    margin-left: 39%;   -> ye bhi working he */
-
     padding: 200px 0px 0px 450px;
     display: flex;
     flex-direction:column;
@@ -294,9 +274,6 @@
 }
 
 .bg3 > div{
-    /* padding: 200px;
-    margin-left: 39%;   -> ye bhi working he */
-
     padding: 195px 0px 0px 970px;
     display: flex;
     flex-direction:column;
@@ -328,9 +305,6 @@
 }
 
 .bg4 > div{
-    /* padding: 200px;
-    margin-left: 39%;   -> ye bhi working he */
-
     padding: 160px 0px 0px 450px;
     display: flex;
     flex-direction:column;
